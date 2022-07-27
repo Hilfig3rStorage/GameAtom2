@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="GameAtom.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <title>Music</title>
+<!-- Hotjar Tracking Code for https://gameatom.broxedu.repl.co/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3071438,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+	<title>Music</title>
+
+	<link rel="shortcut icon" href="GameAtom.png">
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<h1 class="title">Music</h1>
+
+<body class="body">
+
+  <a class="Navbox" href="home.html">Home</a>	
+  
+<div class="dropdown">
+  <button class="dropbtn">Games</button>
+  <div class="dropdown-content">
+    <a href="ub-games.html">Unblocked Games</a>
+    <a href="LeighGames.html">Leigh Games</a>
+    <a href="EmulatorGames.html">Emulators</a>
+  </div>
+
+  </div>
+  
+<a class="Navbox" href="apps.html">Apps</a>
+<a class="Navbox" href="contact.html">Contact</a>
+<a class="Navbox" href="Updates.html">Updates</a>
+<a class="Navbox" href="TOS.html">Terms of Service</a>
+<a class="Navbox" href="unfinished.html">How to fully Unblock chromebook</a>
+<a class="Navbox" href="music.html">Music</a>
+
+<p class="title">Welcome to the Music Library, Browse our list of music curated by us! None of the music tracks belong to us, credits are found within the music selection.</p>
+	
+<br>
+
+<!-- These are the buttons that play/pause the music, they call the javascript function to play/pause -->
+	
+<div style="text-align:center;">
+	
+<button onclick="playAudio()" type="button">Play</button>
+<button onclick="pauseAudio()" type="button">Pause</button> 
+</div>
+<br>
+<p id="musictext" class="title">Now Playing:'Elevator Music'</p>
+
+	
+<br>
+
+<!-- This is a drop-down menu with buttons that call the javascript function to change the music -->
+	
+<div style="text-align:center;">
+ <div class="dropdown" style="text-align:center;">
+    <button class="dropbtn1" style="text-align:center;">Music Selection</button>
+    <div class="dropdown-content">
+			<button onclick="MusicChange6()">Bill Nye the Science Guy Theme</button>
+			<button onclick="MusicChange2()" style="width:160px;" >Bloons TD 4 Theme</button>
+			<button onclick="MusicChange10()">Dancing Silhouette by Harry Breuer and Jean-Jacques Perry</button>
+			<button onclick="MusicChange8()">Hit or Miss Chance Game - Mario Party</button>
+			<button onclick="MusicChange1()" style="width:160px;"  >Elevator Music</button>
+			<button onclick="MusicChange0()">Groovy Funky Disco by Shane Ivers</button>
+			<button onclick="MusicChange4()">Happy Jose by Ulrich Wenzel</button>
+			<button onclick="MusicChange9()">Kitsch Latin Cool by Malcolm Lockyer</button>
+			<button onclick="MusicChange3()">Nintendo DSi Shop Theme</button>
+			<button onclick="MusicChange5()">Pirate Lagoon - Diddy Kong Racing</button>
+			<button onclick="MusicChange7()">Quirky Dog by Kevin MacLeod</button>
+
+
+    </div>
+ </div>
+</div>
+
+<template>
+<button onclick="MusicChange()"></button>
+</template>
+	
+<!-- This is the audio player, hidden. The javascript play/pause and music changer functions change this -->
+			
+<audio id="music" controls loop style="visibility: hidden;" >
+	<source src="ElevatorMusic.mp3" type="audio/mpeg">
+</audio>	
+	
+<script>
+
+// This is the javascript code that simply replaces one audio track with another when called. There is one for each music track.
+	
+function MusicChange0(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "groovy-funky-disco.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Groovy Funky Disco'"
+	
+}
+
+function MusicChange1(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "ElevatorMusic.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Elevator Music'"
+	
+}	
+
+function MusicChange2(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "btd4theme.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Bloons TD 4 Theme'"
+	
+}		
+
+function MusicChange3(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "dsishop.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Nintendo DSi Shop Theme'"
+	
+}			
+
+function MusicChange4(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "happyjose.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Happy Jose'"
+	
+}			
+
+function MusicChange5(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "piratelagoon.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Pirate Lagoon'"
+
+}	
+
+function MusicChange6(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "billnye.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Bill Nye the Science Guy Theme'"
+
+}
+
+function MusicChange7(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "quirkydog.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Quirky Dog'"
+
+}	
+
+function MusicChange8(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "mp1chancetime.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Hit or Miss Chance Game'"
+
+}	
+	
+function MusicChange9(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "kitschlatincool.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Kitsch Latin Cool'"
+
+}	
+
+function MusicChange10(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "dancingsilhouette.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Dancing Silhouette'"
+
+}	
+
+	
+</script>
+
+<template>
+
+function MusicChange(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:''"
+
+}	
+</template>
+
+
+
+	
+<script>
+
+// this is the javascript that plays/pauses the music when called
+	
+var x = document.getElementById("music"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+  
+  
+</body>
+
+</html>

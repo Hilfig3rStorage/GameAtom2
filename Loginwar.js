@@ -1,0 +1,1 @@
+alert("Warning! To play this game a log-in is required (In the Game)")

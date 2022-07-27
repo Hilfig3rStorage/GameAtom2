@@ -1,0 +1,205 @@
+<html>
+<head>
+<link rel="shortcut icon" href="GameAtom.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta author="InMotion Hosting" />
+	
+<title>Our Site is Under Construction</title>
+<link href='styles.css' rel='stylesheet' type='text/css'>	
+<style>
+  
+
+body{
+        background: black;
+        font-family: Vollkorn;
+        padding-top: 100px;
+        text-align: center;
+        font-weight: bold;
+}
+#heading{
+        color: whitesmoke;
+        font: italic normal normal 72px 'Gentium Book Basic';
+}
+p{      
+        border-bottom: 1px solid #e2e1d9;
+        border-top: 1px solid #e2e1d9;
+        color: fuchsia;
+        font: Vollkorn;
+        margin: 10px auto 0;
+        padding: 20px 0;
+        width: 750px;
+        font-weight: bold;
+}
+#logo{
+        display: block;
+        margin: 0 auto 10px;
+}
+</style>
+
+	
+</head>
+
+<body>
+
+
+
+<br>
+	
+	<script>src="byebye.js"</script>
+    
+    <!--<img src="logo.jpg" id="logo"> -->
+    
+    <div id="heading">
+        Under Construction <!-- Updating this line of code will change the larger text on the top -->
+    </div>
+    <p>
+        We apologize for any inconvenience and should be back up with a newly updated website soon.  <!-- Updating this line of code will change the smaller  text -->
+    </p>
+
+<div>
+  <!-- Display the countdown timer in an element -->
+<p style="color: white; text-align: center; font-size: 60px; margin-top: 0px; font: Vollkorn; font-weight: bold;
+" id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("aug 18, 2022 16:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = location.replace("home.html");;
+  }
+}, 1000);
+</script>
+
+<br>	
+	
+<button onclick="playAudio()" type="button" style="text-align: center;">Play</button>
+<button onclick="pauseAudio()" type="button">Pause</button> 
+
+<br>
+
+<p id="musictext" class="title">Now Playing:'Elevator Music'</p>
+	
+<br>
+ <div class="dropdown">
+    <button class="dropbtn1">Music Selection</button>
+    <div class="dropdown-content">
+			<button onclick="MusicChange2()" style="width:160px;">Bloons TD 4 Theme</button>
+			<button onclick="MusicChange1()" style="width:160px;">Elevator Music</button>
+			<button width="15px" onclick="MusicChange0()">Groovy Funky Disco by Shane Ivers</button>
+			<button onclick="MusicChange4()">Happy Jose by Ulrich Wenzel</button>
+			<button onclick="MusicChange3()">Nintendo DSi Shop Theme</button>
+			
+      
+      
+    </div>
+ </div>
+
+<br>
+
+<audio id="music" controls loop style="visibility: hidden;" >
+	<source src="ElevatorMusic.mp3" type="audio/mpeg">
+</audio>
+	
+
+	
+<script>
+
+function MusicChange0(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "groovy-funky-disco.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Groovy Funky Disco'"
+	
+}
+
+function MusicChange1(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "ElevatorMusic.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Elevator Music'"
+	
+}	
+
+function MusicChange2(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "btd4theme.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Bloons TD 4 Theme'"
+	
+}		
+
+function MusicChange3(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "dsishop.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Nintendo DSi Shop Theme'"
+	
+}			
+
+function MusicChange4(){
+
+var audioObject = document.getElementById("music");
+audioObject.src = "happyjose.mp3";
+audioObject.load();
+
+document.getElementById("musictext").innerHTML = "Now Playing:'Happy Jose'"
+	
+}			
+
+	
+</script>
+	
+<script>
+var x = document.getElementById("music"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+	
+	
+ <script src="byebye.js"></script>
+
+</div>
+
+<script>
+  var showAds=true;
+</script>
+
+
+
+  

@@ -1,0 +1,1 @@
+alert("This is a warning, this game will not work on some computers depending on its processing power. We are still not sure why some games cause a crash :/");
